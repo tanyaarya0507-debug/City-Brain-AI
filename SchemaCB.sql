@@ -37,4 +37,4 @@ CREATE INDEX idx_aqi_city_time ON air_quality (city_id, recorded_at);
 
 -- Seed your city (edit as needed)
 INSERT INTO cities (city_name, latitude, longitude)
-VALUES ('Indore', 22.7196, 75.8577);
+VALUES ('Gwalior', 26.2183, 78.1828);
