@@ -37,9 +37,12 @@ iaqi = result.get("iaqi", {})
 pm25 = iaqi.get("pm25", {}).get("v")
 pm10 = iaqi.get("pm10", {}).get("v")
 co = iaqi.get("co", {}).get("v")
+no2 = iaqi.get("no2", {}).get("v")
+so2 = iaqi.get("so2", {}).get("v")
+o3 = iaqi.get("o3", {}).get("v")
 recorded_at = datetime.now()
 
-print(f"Fetched: AQI {aqi_value}, PM2.5 {pm25}, PM10 {pm10}, CO {co}")
+print(f"Fetched: AQI {aqi_value}, PM2.5 {pm25}, PM10 {pm10}, CO {co}, NO2 {no2}, SO2 {so2}, O3 {o3}")
 
 # Step 3: Insert into the database using a parameterized query
 engine = create_engine(DB_URL)
@@ -47,8 +50,8 @@ engine = create_engine(DB_URL)
 with engine.connect() as conn:
     conn.execute(
         text("""
-            INSERT INTO air_quality (city_id, recorded_at, aqi_value, pm25, pm10, co)
-            VALUES (:city_id, :recorded_at, :aqi_value, :pm25, :pm10, :co)
+            INSERT INTO air_quality (city_id, recorded_at, aqi_value, pm25, pm10, co, no2, so2, o3)
+            VALUES (:city_id, :recorded_at, :aqi_value, :pm25, :pm10, :co, :no2, :so2, :o3)
         """),
         {
             "city_id": 1,
@@ -56,7 +59,10 @@ with engine.connect() as conn:
             "aqi_value": aqi_value,
             "pm25": pm25,
             "pm10": pm10,
-            "co": co
+            "co": co,
+            "no2": no2,
+            "so2": so2,
+            "o3": o3
         }
     )
     conn.commit()
