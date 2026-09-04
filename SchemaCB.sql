@@ -28,7 +28,10 @@ CREATE TABLE air_quality (
     aqi_value INT,
     pm25 DECIMAL(6,2),
     pm10 DECIMAL(6,2),
-    co DECIMAL(6,2)
+    co DECIMAL(6,2),
+    no2 DECIMAL(6,2),
+    so2 DECIMAL(6,2),
+    o3 DECIMAL(6,2)
 );
 
 -- Indexes for the columns we'll join/filter on constantly
