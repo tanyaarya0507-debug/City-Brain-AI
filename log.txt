@@ -1,0 +1,42 @@
+
+--- Run started at 2026-09-07 17:41:28.598541 ---
+Fetched: AQI 65, PM2.5 18.84, PM10 28.81, CO 160.66, NO2 3.54, SO2 6.42, O3 75.27
+Inserted successfully into air_quality table.
+Fetched: 31.86°C, 66% humidity, wind 3.09 m/s, scattered clouds
+Inserted successfully into weather table.
+
+--- Run started at 2026-09-07 18:41:37.437115 ---
+Fetched: AQI 67, PM2.5 19.79, PM10 30.47, CO 159.45, NO2 4.57, SO2 6.14, O3 66.2
+Error during collection: (psycopg2.OperationalError) could not translate host name "db.xqojbajtdojiblfruvdb.supabase.co" to address: Unknown server error
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+--- Run started at 2026-09-07 19:41:38.106356 ---
+Fetched: AQI 75, PM2.5 23.53, PM10 50.51, CO 143.25, NO2 4.46, SO2 6.74, O3 66.1
+Inserted successfully into air_quality table.
+Fetched: 29.86°C, 84% humidity, wind 1.03 m/s, clear sky
+Inserted successfully into weather table.
+
+--- Run started at 2026-09-07 21:43:45.190928 ---
+Fetched: AQI 75, PM2.5 23.44, PM10 51.4, CO 149.68, NO2 4.45, SO2 5.35, O3 54.57
+Inserted successfully into air_quality table.
+Fetched: 28.86°C, 84% humidity, wind 0.51 m/s, clear sky
+Inserted successfully into weather table.
+
+--- Run started at 2026-09-07 23:01:07.368088 ---
+Fetched: AQI 76, PM2.5 24.15, PM10 50.11, CO 158.77, NO2 4.52, SO2 4.53, O3 44.64
+Inserted successfully into air_quality table.
+Fetched: 28.86°C, 84% humidity, wind 1.03 m/s, clear sky
+Inserted successfully into weather table.
+
+--- Run started at 2026-09-08 07:42:27.556278 ---
+Fetched: AQI 58, PM2.5 15.52, PM10 29.64, CO 152.39, NO2 4.77, SO2 5.08, O3 29.83
+Inserted successfully into air_quality table.
+Fetched: 26.86°C, 89% humidity, wind 2.06 m/s, clear sky
+Inserted successfully into weather table.
+
+--- Run started at 2026-09-08 18:18:37.100613 ---
+Fetched: AQI 83, PM2.5 27.18, PM10 57.15, CO 121, NO2 5.39, SO2 12.88, O3 81.94
+Inserted successfully into air_quality table.
+Fetched: 29.86°C, 70% humidity, wind 3.37 m/s, scattered clouds
+Inserted successfully into weather table.

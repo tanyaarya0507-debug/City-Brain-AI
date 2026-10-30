@@ -16,8 +16,9 @@ from datetime import datetime, timedelta
 
 np.random.seed(42)
 
-start_date = datetime(2026, 8, 5)
-num_days = 30
+end_date = datetime.now()
+num_days = 90  # or 180, whatever you choose per table
+start_date = end_date - timedelta(days=num_days)
 
 records = []
 for day in range(num_days):
